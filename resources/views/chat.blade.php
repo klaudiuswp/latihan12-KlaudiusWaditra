@@ -48,7 +48,7 @@
                                             {{-- @if (session['response']) --}}
                                             <b>Gemini AI</b>
                                             @if (session()->has('response'))
-                                                {{ session('response') }}
+                                                {!! Str::markdown(session('response')) !!}
                                             @endif
 
                                         </p>
